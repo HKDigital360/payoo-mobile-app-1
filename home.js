@@ -1,3 +1,5 @@
+// Add Money Features
+
 document.getElementById("btn-add-money").addEventListener("click",function(e){
     e.preventDefault()
     
@@ -31,4 +33,31 @@ if (accountNumber.length !== 11 || pinNumber.length !== 4) { alert("Provide a va
 
    document.getElementById("available-balance").innerText = newBalance
    
+})
+
+//Cash Out Features
+document.getElementById("btn-Withdraw-Money").addEventListener("click" , function(e){
+    e.preventDefault()
+   const withdrawAmount = parseInt( document.getElementById("withdraw-amount").value)
+
+   const availableBalance = parseInt(document.getElementById("available-balance").innerText)
+
+const cashOutNewBalance = availableBalance - withdrawAmount
+
+document.getElementById("available-balance").innerText = cashOutNewBalance
+
+})
+
+
+// toggling feature
+document.getElementById("add-money-listener").addEventListener("click" , function(){
+    document.getElementById("cash-out-parent").style.display = "none"
+    document.getElementById("add-money-parent").
+    style.display = "block"
+})
+
+document.getElementById("cash-out-listener").addEventListener("click" , function(){
+    document.getElementById("cash-out-parent").style.display = "block"
+    document.getElementById("add-money-parent").
+    style.display = "none"
 })
