@@ -48,16 +48,61 @@ document.getElementById("available-balance").innerText = cashOutNewBalance
 
 })
 
+// Transfer Money Features
+
+
+
 
 // toggling feature
 document.getElementById("add-money-listener").addEventListener("click" , function(){
     document.getElementById("cash-out-parent").style.display = "none"
     document.getElementById("add-money-parent").
     style.display = "block"
+document.getElementById("transfer-money-parent").style.display = "none"
+document.getElementById("get-bonus-parent").style.display = "none"
+document.getElementById("pay-bill-parent").style.display = "none"
+    
 })
 
 document.getElementById("cash-out-listener").addEventListener("click" , function(){
     document.getElementById("cash-out-parent").style.display = "block"
     document.getElementById("add-money-parent").
     style.display = "none"
+    document.getElementById("transfer-money-parent").style.display = "none"
+    document.getElementById("get-bonus-parent").style.display = "none"
+    document.getElementById("pay-bill-parent").style.display = "none"
 })
+
+
+document.getElementById("transfer-money-listener").addEventListener("click" , function(){
+document.getElementById("transfer-money-parent").style.display = "block"
+    document.getElementById("cash-out-parent").style.display = "none"
+    document.getElementById("add-money-parent").style.display = "none"
+    document.getElementById("get-bonus-parent").style.display = "none"
+    document.getElementById("pay-bill-parent").style.display = "none"
+    
+})
+
+document.getElementById("get-bonus-listener").addEventListener("click" , function(){
+document.getElementById("get-bonus-parent").style.display = "block"
+document.getElementById("add-money-parent").style.display = "none"
+    document.getElementById("cash-out-parent").style.display = "none"
+    document.getElementById("transfer-money-parent").style.display = "none"
+    document.getElementById("pay-bill-parent").style.display = "none"
+    
+})
+
+
+
+document.getElementById("pay-bill-listener").addEventListener("click" , function(){
+document.getElementById("pay-bill-parent").style.display = "block"
+document.getElementById("get-bonus-parent").style.display = "none"
+document.getElementById("add-money-parent").
+    style.display = "none"
+    document.getElementById("cash-out-parent").style.display = "none"
+    document.getElementById("transfer-money-parent").style.display = "none"
+    
+})
+
+
+
