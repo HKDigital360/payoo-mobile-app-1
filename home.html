@@ -58,7 +58,7 @@
     <img src="./assets/purse1.png" class="mx-auto" alt="">
     <h2>Pay Bill</h2>
 </div>
-<div class="border-2 border-gray-300 text-center p-3 rounded-xl">
+<div id="transaction-listener" class="border-2 border-gray-300 text-center p-3 rounded-xl">
     <img src="./assets/transaction1.png" class="mx-auto" alt="">
     <h2>Transactions</h2>
 </div>
@@ -181,6 +181,19 @@
 
             <button  class="btn btn-active text-white bg-[#0874f2] mt-3 rounded-2xl w-full" id="btn-pay-now" >Pay Now</button>
        </form>
+    </div>
+
+    <!-- transaction section -->
+
+    <div id="transaction-parent"  style="display: none;">
+        <div class="flex justify-between mt-3 mb-3">
+        <h1 class="font-semibold">Transaction History</h1>
+<p>View All</p>
+</div>
+
+<div id="transaction-container">
+ 
+    </div>
     </div>
 
       
